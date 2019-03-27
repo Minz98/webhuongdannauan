@@ -1,0 +1,153 @@
+
+    body {  }
+    h1, h2, h3, h4, h5, h6  {  }
+    #logo h1 a, #logo h2 a {  }
+    #navigation .menu > li > a, #navigation ul li a {    }
+    a.blockTitle,
+    .rsSlideTitle.title a {    }
+    
+ 
+    .boxed #logo,#logo {
+                    }
+    #header #navigation {
+            }
+    #blogdesc {
+            }
+.rsDefaultInv .rsThumb.rsNavSelected {
+    -webkit-box-shadow: inset 0px -1px 0px 0px rgba(141,198,63, 0.12), 1px 0px 0px 0px #8dc63f;
+    -moz-box-shadow: inset 0px -1px 0px 0px rgba(141,198,63,, 0.12), 1px 0px 0px 0px #8dc63f;
+    box-shadow: inset 0px -1px 0px 0px rgba(141,198,63, 0.12), 1px 0px 0px 0px #8dc63f;
+}
+#current,
+.menu ul li a:hover,
+.menu ul > li:hover > a,
+.menu ul ul,
+.rsDefaultInv .rsThumb.rsNavSelected,
+.rsDefault .rsThumb.rsNavSelected,
+.menu > ul > li.current-menu-ancestor > a, .menu > ul > li.current-menu-item > a, #current,
+
+.foodiepress-wrapper.recipe2 .instructions ul > li.active:before,
+.foodiepress-wrapper.recipe1 .instructions ul > li.active:before,
+.foodiepress-wrapper.recipe1 .ingredients li.active:before,
+.foodiepress-wrapper.recipe1 .ingredients a:hover:after,
+.foodiepress-wrapper.recipe2 .ingredients-container .ingredients a:hover:after,
+.foodiepress-wrapper.recipe2 .ingredients li.active:before {
+    border-color: #8dc63f;
+}
+
+.alternative #current:hover,
+.wp-core-ui .button:hover,
+.foodiepress-wrapper.recipe1 .instructions ul > li.active:before,
+.foodiepress-wrapper.recipe2 .instructions ul > li.active:before,
+.menu.alternative ul li a:hover,
+.menu.alternative ul > li.sfHover > a {
+    background-color: #8dc63f !important;
+}
+
+
+.rsDefault .rsArrowIcn:hover,
+a.print,
+.ingredients input[type=checkbox]:checked + label:before,
+#slider-prev:hover,
+#slider-next:hover,
+.search button,
+#bbpress-forums .topic-author div.bbp-reply-header,
+.rsSlideTitle.tags ul li,
+ul.categories li a:hover,
+.post-icon,
+.rate-recipe,
+.comment-by a.reply:hover,
+.comment-by a.comment-reply-link:hover,
+.newsletter-btn,
+.product-button,
+.search-by-keyword button,
+.chosen-container .chosen-results li.highlighted,
+.chosen-container-multi .chosen-choices li.search-choice,
+.tabs-nav li.active a,
+.ui-accordion .ui-accordion-header-active:hover,
+.ui-accordion .ui-accordion-header-active,
+a.nav-toggle.active,
+.upload-btn,
+a.button.color, input[type="button"], input.button.color,
+.widget_categories ul li a:hover,
+input[type="submit"],
+.nav-links a:hover,
+a.button.light:hover,
+#advanced-search .search-by-keyword button, .search .search-by-keyword button,
+nav.search button, aside.search button,
+.foodiepress-wrapper.recipe1 .ingredients li.active:before,
+.foodiepress-wrapper.recipe2 .ingredients li.active:before,
+.pagination ul li a.current-page { background-color: #8dc63f; }
+
+
+.rsDefaultInv .rsThumb.rsNavSelected,
+a.blockTitle:hover,
+.rsDefault .rsThumb.rsNavSelected,
+.rsDefault .rsThumbsArrow:hover,
+.qtyplus:hover,
+.qtyminus:hover,
+body input[type="button"]:hover,
+.quantity input.plus:hover, 
+.quantity input.minus:hover, 
+a.cart-remove:hover,
+.linking .button,
+.mfp-close:hover,
+a.calculate-shipping:hover,
+.widget_price_filter .button,
+a.button.wc-forward,
+.shipping-calculator-form .button,
+.mfp-arrow:hover,
+.pagination .current,
+.pagination ul li a:hover,
+.pagination-next-prev ul li a:hover,
+.highlight.color { background: #8dc63f; }
+
+a,
+.author-box .title,
+.author-box .contact a:hover,
+ul.product_list_widget li a:hover,
+a.adv-search-btn.active i,
+a.adv-search-btn.active,
+a.adv-search-btn:hover i,
+a.adv-search-btn:hover,
+.foodiepress-wrapper.recipe1 .ingredients a:hover,
+.foodiepress-wrapper.recipe2 .ingredients a:hover,
+.comment-by a.url:hover,
+.author-box a:hover span,
+.post-meta a:hover,
+table.cart-table td.product-name a:hover,
+.widget ul li a:hover,
+.basic-table.fav-recipes .recipe-title a:hover,
+.list-1.color li:before,
+.list-2.color li:before,
+.list-3.color li:before,
+.list-4.color li:before { color: #8dc63f; }
+
+#footer ul li { margin: 8px 0;}
+
+.list-style .thumbnail-holder img {
+    height: auto;
+    width: 100%;
+    max-width: inherit;
+}
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+#wfsi-socialicons-inline-css 
+                    a.ptwsi-social-icon,
+                    a.ptwsi-social-icon:visited,
+                    .ptwsi_social-icons li a:visited,
+                    .ptwsi_social-icons li a {
+                            color: #A0A0A0;
+                            background:  #F2F2F2;
+                    }
+
