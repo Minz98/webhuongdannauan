@@ -17,6 +17,7 @@ Trang chủ
             <div class="row">
                 <!-- Top Catagory Area -->
                 @foreach ($datactmoi as $item)
+               
                 <div class="col-12 col-lg-6">
                         <div class="single-top-catagory">
                             <img src="../public/img/{{ $item['anhgioithieu']}}" alt="">
@@ -24,7 +25,7 @@ Trang chủ
                             <div class="top-cta-content">
                                 <h3>{{ $item['tieude']}}</h3>
                                 <p><i class="fa fa-clock-o" aria-hidden="true"></i> {{ $item['thoigianthuchien']}} <i class="fa fa-bolt" aria-hidden="true"></i> {{ $item['capdo']}} <i class="fa fa-eye" aria-hidden="true"></i> {{ $item['songuoixem']}} lượt xem </p>
-                                <a href="receipe-post.html" class="btn delicious-btn">Xem chi tiết</a>
+                                <a href="cong-thuc/{{ $item['congthuc_id']}}" class="btn delicious-btn">Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
