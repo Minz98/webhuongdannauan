@@ -12,3 +12,4 @@
 */
 
 Route::get('/','homeController@showhome');
+Route::get('cong-thuc/{id}','homeController@congThuc');
