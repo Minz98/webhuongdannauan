@@ -1,6 +1,6 @@
  <!-- ##### Hero Area Start ##### -->
  <section class="hero-area">
-    
+
      <div class="hero-slides owl-carousel">
             @foreach ($dataslide as $item)
             <div class="single-hero-slide bg-img" style="background-image: url('../public/img/slide-img/{{ $item['anh'] }}')">
@@ -17,9 +17,9 @@
                 </div>
             </div>
             @endforeach
-           
+
         </div>
-   
-      
+
+
     </section>
     <!-- ##### Hero Area End ##### -->
