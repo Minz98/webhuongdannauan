@@ -1,7 +1,7 @@
   <!-- Preloader -->
   <div id="preloader">
         <i class="circle-preloader"></i>
-        <img src="{{ asset('../public/img/core-img/salad.png') }}" alt="">
+        <img src="{{ asset('public/img/core-img/salad.png') }}" alt="">
     </div>
 
     <!-- Search Wrapper -->
@@ -36,7 +36,7 @@
                                     <li><a href="#">Xin chào các bạn</a></li>
                                     <li><a href="#">Muốn ăn thì lăn vào bếp</a></li>
                                     <li><a href="#">Hãy đến đây và thực hiện những món ăn ngon</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                     <nav class="classy-navbar justify-content-between" id="deliciousNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img src="{{ asset('../public/img/core-img/salad.png') }}img/core-img/logo.png" alt=""></a>
+                        <a class="nav-brand" href="index.html"><img src="public/img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -80,7 +80,7 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="index.html">Trang chủ</a></li>
+                                    <li class="active"><a href="/">Trang chủ</a></li>
                                     <li><a href="#">Công thức</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
@@ -88,33 +88,33 @@
                                                 <li><a href="index.html">Giảm cân</a></li>
                                                 <li><a href="about.html">Món chay</a></li>
                                                 <li><a href="blog-post.html">Tăng cân</a></li>
-                                                <li><a href="receipe-post.html">Ăn vặt</a></li>     
+                                                <li><a href="receipe-post.html">Ăn vặt</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
                                                 <li class="title">Nguyên liệu</li>
                                                 <li><a href="index.html">Giảm cân</a></li>
                                                     <li><a href="about.html">Món chay</a></li>
                                                     <li><a href="blog-post.html">Tăng cân</a></li>
-                                                    <li><a href="receipe-post.html">Ăn vặt</a></li>     
+                                                    <li><a href="receipe-post.html">Ăn vặt</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
                                                 <li class="title">Ẩm thực</li>
                                                 <li><a href="index.html">Giảm cân</a></li>
                                                     <li><a href="about.html">Món chay</a></li>
                                                     <li><a href="blog-post.html">Tăng cân</a></li>
-                                                    <li><a href="receipe-post.html">Ăn vặt</a></li>     
+                                                    <li><a href="receipe-post.html">Ăn vặt</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
                                                 <li class="title">Dịp lễ hội</li>
                                                 <li><a href="index.html">Giảm cân</a></li>
                                                     <li><a href="about.html">Món chay</a></li>
                                                     <li><a href="blog-post.html">Tăng cân</a></li>
-                                                    <li><a href="receipe-post.html">Ăn vặt</a></li>     
+                                                    <li><a href="receipe-post.html">Ăn vặt</a></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="#">Blog</a></li>
-                                   
+                                    <li><a href="listblog">Blog</a></li>
+
                                     <li><a href="receipe-post.html">Videos</a></li>
                                     <li><a href="receipe-post.html">Top thành viên</a></li>
                                     <li><a href="contact.html">Liên hệ</a></li>

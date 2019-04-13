@@ -12,4 +12,15 @@
 */
 
 Route::get('/','homeController@showhome');
-Route::get('cong-thuc/{id}','homeController@congThuc');
+Route::get('listblog','listblogController@listblog');
+Route::get('cong-thuc/{id}','CongthucController@congThuc');
+Route::get('blog/{id}','blogController@blog');
+Route::group(['prefix'=>'blog'],function(){
+    Route::get('{id}','blogController@blog');
+    Route::get('blog/{id}','blogController@blog');
+});
+Route::group(['prefix'=>'loai'],function(){
+    Route::get('{id}','listrecipeController@category');
+    Route::get('cong-thuc/{id}','CongthucController@congThuc');
+});
+

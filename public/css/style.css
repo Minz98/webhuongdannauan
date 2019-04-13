@@ -700,6 +700,7 @@ textarea:focus {
     display: block;
     transition: .5s ease;
     backface-visibility: hidden;
+    height: 200px;
   }
   .single-best-receipe-area .recipe-image .middle {
     transition: .5s ease;
@@ -714,11 +715,11 @@ textarea:focus {
   .single-best-receipe-area .recipe-image:hover img {
     opacity: 0.3;
   }
-  
+
   .single-best-receipe-area .recipe-image:hover .middle {
     opacity: 1;
   }
-  
+
   .single-best-receipe-area img {
     border-bottom: 3px solid #40ba37; }
   .single-best-receipe-area .receipe-content {
@@ -1007,6 +1008,7 @@ textarea:focus {
 .receipe-slider {
   position: relative;
   z-index: 1; }
+
   .receipe-slider .owl-prev,
   .receipe-slider .owl-next {
     background-color: transparent;

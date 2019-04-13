@@ -7,79 +7,13 @@ use Illuminate\Http\Request;
 
 class CongthucController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\congthuc  $congthuc
-     * @return \Illuminate\Http\Response
-     */
-    public function show(congthuc $congthuc)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\congthuc  $congthuc
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(congthuc $congthuc)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\congthuc  $congthuc
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, congthuc $congthuc)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\congthuc  $congthuc
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(congthuc $congthuc)
-    {
-        //
+    public function congThuc($unsigned_name){
+        $Congthuc='App\Congthuc'::where('congthuc_id',$unsigned_name)->get();
+        $nguyenlieu=explode(";",$Congthuc[0]['nguyenlieu']);
+        $cachlam=explode("//",$Congthuc[0]['cachlam']);
+        $anhcachlam=explode(";",$Congthuc[0]['anhcachlam']);
+        $loaiid=$Congthuc[0]['loai_id'];
+        $monlienquan='App\Congthuc'::where('loai_id',$loaiid)->limit(4)->get();
+        return view('page.detail')->with('datacongthuc',$Congthuc)->with('datanguyenlieu',$nguyenlieu)->with('datacachlam',$cachlam)->With('dataanhcachlam',$anhcachlam)->with('datamonlienquan',$monlienquan)->with('dataloai',$loaiid);
     }
 }

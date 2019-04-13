@@ -1,6 +1,6 @@
 @extends('master')
 @section('tieudetrang')
-Công thức     
+Công thức làm: {{$datacongthuc[0]['tieude']}}
 @endsection
 @section('content')
 <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(../public/img/{{ $datacongthuc[0]['anhgioithieu'] }});">
@@ -11,7 +11,7 @@ Công thức
                     <h2>Công thức làm: {{$datacongthuc[0]['tieude']}}</h2>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
 </div>
 <!-- ##### Breadcumb Area End ##### -->
@@ -68,7 +68,7 @@ Công thức
                                         <option value="1">Thịt heo</option>
                                     </select>
                                 </div>
-                   
+
                     <div class="col-12 col-lg-2 text-right">
                         <button type="submit" class="btn delicious-btn">Tìm kiếm</button>
                     </div>
@@ -83,9 +83,9 @@ Công thức
             <div class="col-12">
                 <div class="receipe-slider owl-carousel">
                     @foreach ($dataanhcachlam as $item)
-                    <img src="../public/img/{{$item}}" alt="" width="200px" height="300px">
+                    <img class="receipe-img" src="../public/img/{{$item}}" alt="">
                     @endforeach
-                
+
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@ Công thức
             <div class="row">
                 <div class="col-12 col-md-8">
                     <div class="receipe-headline my-5">
-                      
+
                         <span>{{ date_format($datacongthuc[0]['created_at'],'d')}}/{{ date_format($datacongthuc[0]['created_at'],'m')}}/{{ date_format($datacongthuc[0]['created_at'],'y')}}</span>
                         <h2>{{$datacongthuc[0]['tieude']}}</h2>
                         <div class="receipe-duration">
@@ -110,28 +110,31 @@ Công thức
                     </div>
                 </div>
 
-               
+
             </div>
 
             <div class="row">
                 <div class="col-12 col-lg-8">
                     <!-- Single Preparation Step -->
-                    
+
                     @foreach ($datacachlam as $index=>$item)
                     <div class="single-preparation-step d-flex">
-                            <h4>B{{$index++}}:  </h4>
+                            <h4>B{{
+
+                                $index++
+                                }}:  </h4>
                             <p>{{$item}}</p>
                         </div>
                     @endforeach
-                    
-                  
+
+
                 </div>
 
                 <!-- Ingredients -->
                 <div class="col-12 col-lg-4">
                     <div class="ingredients">
                         <h4>Nguyên liệu</h4>
-                     
+
                         @foreach ($datanguyenlieu as $item )
                         <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="customCheck1">
@@ -139,9 +142,9 @@ Công thức
                             </div>
                         @endforeach
                         <!-- Custom Checkbox -->
-                       
 
-                        
+
+
                     </div>
                 </div>
             </div>
@@ -159,8 +162,8 @@ Công thức
                     <div class="contact-form-area">
                         <form action="#" method="post">
                             <div class="row">
-                              
-                               
+
+
                                 <div class="col-12">
                                     <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Nội dung"></textarea>
                                 </div>
@@ -178,32 +181,32 @@ Công thức
 
 
 <section class="best-receipe-area">
-    
+
         <div class="container">
             <div class="row">
-            
+
                 <div class="col-12">
                     <div class="section-heading1 text-left">
-                        <h3>Món liên quan<span>Xem thêm</span></h3>  
+                    <h3>Món liên quan</h3>
                     </div>
-                    
+
                 </div>
             </div>
 
             <div class="row">
-                    @foreach ($datamonlienquan as $item) 
+                    @foreach ($datamonlienquan as $item)
                 <!-- Single Best Receipe Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-best-receipe-area mb-30">
                         <div class="recipe-image">
                                 <img src="../public/img/{{$item['anhgioithieu']}}" alt="">
                                 <div class="middle">
-                                        <a href="receipe-post.html" class="btn delicious-btn">Xem chi tiết</a>
+                                        <a href="cong-thuc/{{ $item['congthuc_id']}}" class="btn delicious-btn">Xem chi tiết</a>
                                       </div>
                         </div>
-                       
+
                         <div class="receipe-content">
-                            <a href="receipe-post.html">
+                            <a href="{{ $item['congthuc_id']}}">
                                 <h5>{{$item['tieude']}}</h5>
                             </a>
                             <p><i class="fa fa-clock-o" aria-hidden="true"></i> {{$item['thoigianthuchien']}} <i class="fa fa-bolt" aria-hidden="true"></i> {{$item['capdo']}} <i class="fa fa-eye" aria-hidden="true"></i>{{$item['songuoixem']}} lượt xem </p>
@@ -211,9 +214,9 @@ Công thức
                     </div>
                 </div>
                 @endforeach
-            
+
         </div>
-            
+
         </div>
     </section>
 @endsection
